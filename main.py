@@ -1,9 +1,5 @@
-from scraper.parliament_scraper import scrape_parliament
+from gui.dashboard import Dashboard
 
-from scraper.treasury_scraper import scrape_treasury
+app = Dashboard()
 
-scrape_parliament()
-
-scrape_treasury()
-
-print("Scraping Complete")
+app.mainloop()

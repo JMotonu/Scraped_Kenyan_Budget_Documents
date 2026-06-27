@@ -8,14 +8,13 @@ from database.mongodb import (
     get_documents,
     delete_document,
     mark_viewed,
-    get_documents_count
 )
 
 from scraper.parliament_scraper import scrape_parliament
 
 from scraper.treasury_scraper import scrape_treasury
 
-from exports import export_csv
+from export import export_csv
 
 
 class Dashboard(ctk.CTk):

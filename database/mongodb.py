@@ -47,3 +47,5 @@ def mark_viewed(doc_id):
         {"_id": ObjectId(doc_id)},
         {"$set": {"viewed": True}}
     )
+    def get_documents_count():
+        return collection.count_documents({})
